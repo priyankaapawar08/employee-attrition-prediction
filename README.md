@@ -182,28 +182,3 @@ Edit in `create_synthetic_data()` function to include additional HR metrics.
 
 ---
 
-## 🤝 Contributing
-
-This is a consultant-ready ML project template. Customize it for your organization's specific needs.
-
----
-
-## 📞 Support
-
-For issues or questions:
-1. Check the code comments in `attrition_prediction.py`
-2. Review the visualizations in `outputs/`
-3. Modify parameters as needed for your data
-
----
-
-## 🎯 Business Value Delivered
-
-✅ **Predictive**: Know who will leave before they do  
-✅ **Prescriptive**: Understand why they're leaving  
-✅ **Actionable**: Get specific intervention recommendations  
-✅ **ROI-Focused**: Track cost savings and business impact  
-
----
-
-**Built with business impact in mind. Deploy with confidence.** 🚀
