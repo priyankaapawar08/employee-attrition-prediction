@@ -87,6 +87,293 @@ python dashboard.py
 
 ---
 
+## 🖥️ Sample Output
+
+Below is an illustrative walkthrough of a full dashboard session, showing what each menu option looks like end-to-end. Exact numbers will differ based on your actual trained model and dataset.
+
+```
+================================================================================
+🎯 EMPLOYEE ATTRITION PREDICTION DASHBOARD
+================================================================================
+
+📥 Loading model artifacts...
+✅ Loaded 220 employee records
+✅ Loaded risk assessment for 220 employees
+
+================================================================================
+MAIN MENU
+================================================================================
+
+1. 📊 View Risk Summary
+2. 🔍 Search Employee by Risk Level
+3. 👤 Individual Employee Report
+4. 💼 Department Analysis
+5. 💰 Calculate ROI
+6. ➕ Predict New Employee
+7. 📈 View Top Risk Factors
+8. 🚪 Exit
+
+--------------------------------------------------------------------------------
+
+Select option (1-8): 1
+
+================================================================================
+📊 ATTRITION RISK SUMMARY
+================================================================================
+
+📈 Overall Statistics:
+   Total Employees Analyzed: 220
+   Average Risk Score: 34.6%
+
+🎯 Risk Distribution:
+   🔴 HIGH RISK (≥70%):      28 employees ( 12.7%)
+   🟡 MEDIUM RISK (40-70%):  76 employees ( 34.5%)
+   🟢 LOW RISK (<40%):      116 employees ( 52.7%)
+
+🎯 Action Required:
+   • 28 employees need IMMEDIATE attention
+   • 76 employees require PROACTIVE monitoring
+   • 116 employees - maintain current engagement
+
+Press Enter to continue...
+```
+
+```
+Select option (1-8): 2
+
+================================================================================
+🔍 SEARCH BY RISK LEVEL
+================================================================================
+
+Select risk level:
+1. High Risk
+2. Medium Risk
+3. Low Risk
+
+Enter choice (1-3): 1
+
+HIGH RISK EMPLOYEES: 28
+--------------------------------------------------------------------------------
+
+Showing top 10:
+ Attrition_Risk_Score Risk_Level
+                 0.91       High
+                 0.87       High
+                 0.85       High
+                 0.83       High
+                 0.81       High
+                 0.79       High
+                 0.77       High
+                 0.75       High
+                 0.73       High
+                 0.71       High
+
+... and 18 more
+
+Press Enter to continue...
+```
+
+```
+Select option (1-8): 3
+
+================================================================================
+👤 INDIVIDUAL EMPLOYEE REPORT
+================================================================================
+
+Enter Employee ID (0-219): 14
+
+📋 EMPLOYEE PROFILE: ID 14
+--------------------------------------------------------------------------------
+
+🎯 Risk Assessment:
+   Attrition Risk Score: 78.0%
+   Risk Level: High
+
+📊 Employee Details:
+   • Age                           31
+   • Department                    Sales
+   • DistanceFromHome              22
+   • Education                     2
+   • EnvironmentSatisfaction       1
+   • JobInvolvement                2
+   • JobLevel                      1
+   • JobSatisfaction               1
+   • MonthlyIncome                 2900
+   • NumCompaniesWorked            5
+   • OverTime                      Yes
+   • PercentSalaryHike             11
+   • PerformanceRating             3
+   • TotalWorkingYears             6
+   • TrainingTimesLastYear         1
+   • WorkLifeBalance               1
+   • YearsAtCompany                2
+   • YearsInCurrentRole            1
+   • YearsSinceLastPromotion       1
+   • YearsWithCurrManager          1
+
+💡 RECOMMENDED ACTIONS:
+   ⚠️  Schedule 1-on-1 retention conversation immediately
+   💰 Review compensation - below market range detected
+   ⏰ Address overtime workload and work-life balance
+   🎯 Discuss career growth and promotion timeline
+   👥 Improve manager relationship / consider team reassignment
+
+Press Enter to continue...
+```
+
+```
+Select option (1-8): 4
+
+================================================================================
+💼 DEPARTMENT RISK ANALYSIS
+================================================================================
+
+📊 Department Summary:
+                        Avg_Risk  Max_Risk  Total_Emp  High_Risk_Count  High_Risk_%
+Department
+Sales                      0.412     0.910         89               19         21.3
+Human Resources            0.355     0.840         28                5         17.9
+Research & Development     0.298     0.870        103               4          3.9
+
+🎯 Department Priorities:
+
+   Sales:
+   • Average Risk: 41.2%
+   • High Risk Employees: 19 (21.3%)
+   • Action: Focus retention efforts on this department
+
+   Human Resources:
+   • Average Risk: 35.5%
+   • High Risk Employees: 5 (17.9%)
+   • Action: Focus retention efforts on this department
+
+   Research & Development:
+   • Average Risk: 29.8%
+   • High Risk Employees: 4 (3.9%)
+   • Action: Focus retention efforts on this department
+
+Press Enter to continue...
+```
+
+```
+Select option (1-8): 5
+
+================================================================================
+💰 ROI CALCULATOR
+================================================================================
+
+   Predicted departures from current data: 28
+
+📝 Enter parameters (or press Enter for defaults):
+   Number of predicted departures [28]:
+   Average cost per hire [$4,000]:
+   Average productivity loss [$2,000]:
+   Expected prevention rate [0.5 = 50%]:
+
+================================================================================
+💰 ROI ANALYSIS RESULTS
+================================================================================
+
+📊 Inputs:
+   Predicted Departures: 28
+   Cost per Hire: $6,000
+   Prevention Rate: 50%
+
+💵 Financial Impact:
+   Total Potential Cost: $168,000
+   Prevented Departures: 14
+   💰 COST SAVINGS: $84,000
+
+📈 ROI Scenarios:
+   • 25% prevention: $42,000 saved
+   • 50% prevention: $84,000 saved
+   • 75% prevention: $126,000 saved
+
+Press Enter to continue...
+```
+
+```
+Select option (1-8): 6
+
+📝 Enter employee information:
+   (Press Enter to use sample values)
+
+   Age [35]:
+   Department [Sales]:
+   DistanceFromHome [15]:
+   Education [3]:
+   EnvironmentSatisfaction [2]:
+   JobInvolvement [3]:
+   JobLevel [2]:
+   JobSatisfaction [2]:
+   MonthlyIncome [5000]:
+   NumCompaniesWorked [4]:
+   OverTime [Yes]:
+   PercentSalaryHike [12]:
+   PerformanceRating [3]:
+   TotalWorkingYears [10]:
+   TrainingTimesLastYear [2]:
+   WorkLifeBalance [2]:
+   YearsAtCompany [3]:
+   YearsInCurrentRole [2]:
+   YearsSinceLastPromotion [1]:
+   YearsWithCurrManager [2]:
+
+================================================================================
+🎯 PREDICTION RESULTS
+================================================================================
+
+📊 Attrition Risk Score: 68.4%
+   Risk Classification: Medium
+
+💡 RECOMMENDED ACTIONS:
+   ⏰ Address overtime workload and work-life balance
+   💰 Review compensation - below market range detected
+   🎯 Discuss career growth and promotion timeline
+
+Press Enter to continue...
+```
+
+> **Tip:** When typing a categorical value manually (e.g. `Department` or `OverTime`), it must exactly match one of the categories the model's label encoder was trained on, or you'll see:
+> `❌ Prediction error: y contains previously unseen labels: '...'`
+> Check valid values with `print(encoders['Department'].classes_)` or `df['Department'].unique()` before typing a custom value.
+
+```
+Select option (1-8): 7
+
+================================================================================
+📈 TOP ATTRITION RISK FACTORS
+================================================================================
+
+🔝 Top 10 Most Important Features:
+--------------------------------------------------------------------------------
+    1. OverTime                       0.1842 █████████
+    2. MonthlyIncome                  0.1215 ██████
+    3. Age                            0.0983 ████
+    4. TotalWorkingYears              0.0870 ████
+    5. YearsAtCompany                 0.0754 ███
+    6. DistanceFromHome               0.0611 ███
+    7. JobSatisfaction                0.0542 ██
+    8. WorkLifeBalance                0.0498 ██
+    9. YearsSinceLastPromotion        0.0421 ██
+   10. EnvironmentSatisfaction        0.0387 █
+
+💡 Business Interpretation:
+   • Higher scores = stronger influence on attrition
+   • Focus retention efforts on top factors
+   • Monitor changes in these features closely
+
+Press Enter to continue...
+```
+
+```
+Select option (1-8): 8
+
+👋 Exiting dashboard. Goodbye!
+```
+
+---
+
 ## 🔍 Using Utility Functions
 
 ### Load Trained Model
@@ -244,6 +531,15 @@ python attrition_prediction.py
 mkdir -p outputs
 ```
 
+### Problem: "Prediction error: y contains previously unseen labels"
+**Solution**: The value you typed for a categorical field (like `Department` or `OverTime`) doesn't exactly match a category the encoder was trained on. Check valid values first:
+```python
+import pandas as pd
+df = pd.read_csv('data/employee_data.csv')
+print(df['Department'].unique())
+```
+Then retype the exact matching string at the prompt.
+
 ---
 
 ## 📊 Customization Tips
@@ -269,35 +565,3 @@ models_to_train = {
 }
 ```
 
-### Adjust Cost Parameters
-Edit in `dashboard.py` or `utils.py`:
-```python
-avg_cost_per_hire = 5000  # Change from 4000
-avg_productivity_loss = 3000  # Change from 2000
-```
-
----
-
-## 📞 Next Steps
-
-1. ✅ Run `python attrition_prediction.py` to generate all outputs
-2. ✅ Review visualizations in `outputs/` folder
-3. ✅ Open `outputs/employee_risk_report.csv` in Excel
-4. ✅ Try `python dashboard.py` for interactive exploration
-5. ✅ Customize thresholds and parameters as needed
-6. ✅ Integrate with your HR systems
-
----
-
-## 💡 Pro Tips
-
-- **Retrain quarterly** with fresh employee data
-- **Monitor trends** in feature importance over time
-- **Act fast** on high-risk employees (within 1 week)
-- **Document interventions** to measure effectiveness
-- **Combine predictions** with manager judgment
-- **Use dashboard** for daily/weekly monitoring
-
----
-
-**Ready to reduce attrition and save costs! 🚀**
